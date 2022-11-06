@@ -2,9 +2,8 @@
 
 ## Data
 
-For this project, we will be using data from the [Waymo Open dataset](https://waymo.com/open/).
+For this project, we will be using data from the [Waymo Open dataset](https://waymo.com/open/). It is needed to create a CNN to detect and classify objects in an urban environment (Cyclist, Cars, Pedestrian). 
 
-[OPTIONAL] - The files can be downloaded directly from the website as tar files or from the [Google Cloud Bucket](https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files/) as individual tf records. We have already provided the data required to finish this project in the workspace, so you don't need to download it separately.
 
 ## Structure
 
@@ -137,24 +136,5 @@ Finally, you can create a video of your model's inferences for any tf record fil
 ```
 python inference_video.py --labelmap_path label_map.pbtxt --model_path experiments/reference/exported/saved_model --tf_record_path /data/waymo/testing/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord --config_path experiments/reference/pipeline_new.config --output_path animation.gif
 ```
-
-## Submission Template
-
-### Project overview
-This section should contain a brief description of the project and what we are trying to achieve. Why is object detection such an important component of self driving car systems?
-
-### Set up
-This section should contain a brief description of the steps to follow to run the code for this repository.
-
-### Dataset
-#### Dataset analysis
-This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
-#### Cross validation
-This section should detail the cross validation strategy and justify your approach.
-
-### Training
-#### Reference experiment
-This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
-
-#### Improve on the reference
-This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+# Report 
+For more detail about the performance of the CNN, please reference to the repective [writeup]('./vision_writeup')
